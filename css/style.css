@@ -109,6 +109,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-contacts {
@@ -129,6 +130,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-gray);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contact {
@@ -211,6 +213,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     border: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner-btn:hover,
@@ -386,6 +389,8 @@ body {
     border-radius: 50%;
     background-color: transparent;
     color: var(--icon-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .team-soc-icon {
@@ -416,6 +421,8 @@ body {
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     color: var(--icon-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -480,6 +487,7 @@ body {
     font-style: normal;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
@@ -513,6 +521,8 @@ body {
     border-radius: 50%;
     background-color: var(--footer-iconbg);
     color: var(--main-bg);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -536,11 +546,14 @@ body {
     background-color: var(--modal-bg);
 
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
@@ -585,6 +598,7 @@ body {
     border: 1px solid var(--modal-bg);
     border-radius: 50%;
     color: var(--logo-black);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -602,6 +616,10 @@ body {
     border-radius: 4px;
     cursor: pointer;
     border: 0;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-family: inherit;
     font-weight: 500;
@@ -624,14 +642,14 @@ body {
 
 .filters-btn:hover,
 .filters-btn:focus {
-    background: var(--hover-blue);    
+    background-color: var(--hover-blue);    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: var(--main-bg);
 }
 
 .btn-active {
-    background: var(--hover-blue);
+    background-color: var(--hover-blue);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: var(--main-bg);
@@ -680,6 +698,7 @@ body {
 
   .projects-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .projects-description {
